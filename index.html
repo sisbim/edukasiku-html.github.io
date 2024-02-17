@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/216b6dc715.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/white-logo3.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JavaScript</a></li>
+                <li><a href="#tentang">Tentang Saya</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Edukasi Programming</p>
+            <h1>Overview Tentang <br><span>Front End</span> Development</h1>
+        </div>
+
+    </div>
+</div>
+
+<!--HTML--> 
+
+<div id="html">
+    <div class="container">
+        <div class="row">
+            <div class="html-col-1">
+                <img src="images/lhtml.png" alt="">
+            </div>
+            <div class="html-col-2">
+                <h1 class="sub-title">Mengenal HTML</h1>
+                <p>HTML adalah singkatan dari <i>HyperText Markup Language</i>. Ini merupakan bahasa markup standar untuk pembuatan halaman web. HTML memungkinkan pembuatan dan struktur bagian, paragraf, dan tautan menggunakan elemen HTML (blok bangunan dari halaman web) seperti tag dan atribut.</p>
+                <div class="tab-title">
+                    <p class="tab-link active-link" onclick="opentab('fungsi')">Fungsi</p>
+                    <p class="tab-link" onclick="opentab('carakerja')">Cara Kerja</p>
+                    <p class="tab-link" onclick="opentab('aturan')">Aturan Dasar</p>
+
+                </div>
+                <div class="tab-content active-tab" id="fungsi">
+                    <ul>
+                        <li><span>Struktur Konten Web</span><br>HTML berfungsi sebagai bahasa markup yang digunakan untuk membentuk struktur konten di web, termasuk teks, gambar, tautan, dan media lainnya.</li>
+                        <li><span>Interaktivitas dan Navigasi</span><br>HTML memungkinkan pembuatan tautan (hyperlink) untuk navigasi antar halaman, serta formulir untuk pengguna berinteraksi dengan menyampaikan data.</li>
+                        <li><span>Semantik dan Aksesibilitas</span><br>HTML mendukung markup semantik dengan elemen-elemen seperti tag header, nav, article, yang meningkatkan aksesibilitas dan memastikan pemahaman konten oleh mesin pencari.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="carakerja">
+                    <ul>
+                        <li><span>Penulisan Dokumen HTML</span><br>Setiap halaman web dimulai dengan deklarasi dokumen HTML, yang dituliskan sebagai !DOCTYPE html. Ini memberitahu browser bahwa dokumen ini adalah dokumen HTML5.</li>
+                        <li><span>Elemen HTML</span><br>HTML menggunakan elemen-elemen untuk mendefinisikan struktur dan konten halaman web. Elemen dimulai dan diakhiri dengan tag. Contohnya, p untuk paragraf, h1 untuk heading level 1, a untuk tautan, dll</li>
+                        <li><span>Struktur Dasar HTML</span><br>Sebuah dokumen HTML biasanya memiliki struktur dasar, termasuk elemen-elemen seperti html, head, dan body</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="aturan">
+                    <ul>
+                        <li><span>Deklarasi Dokumen HTML</span><br>Setiap dokumen HTML dimulai dengan deklarasi untuk menentukan versi HTML yang digunakan.</li>
+                        <li><span>Elemen HTML</span><br>HTML menggunakan elemen untuk menentukan struktur dan konten dokumen. Setiap elemen dimulai dengan tag pembuka dan diakhiri dengan tag penutup (kecuali untuk elemen yang bersifat mandiri).</li>
+                        <li><span>Struktur Dasar HTML</span><br>Dokumen HTML memiliki struktur dasar dengan elemen html, head, dan body. Tag html membungkus seluruh dokumen, head berisi informasi terkait dokumen seperti judul, dan body berisi konten utama.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!----css-->
+<div id="css">
+    <div class="container2">
+        <div class="row">
+            <div class="css-col-1">
+                <div class="css-col-1">
+                    <h1 class="sub-title2">Mengenal CSS</h1>
+                    <p>CSS, yang merupakan singkatan dari <i>Cascading Style Sheets</i>, adalah bahasa <i>stylesheet</i> yang digunakan untuk menjelaskan tata letak dari suatu dokumen yang ditulis dalam HTML atau XML. CSS mengontrol tata letak, gaya, dan tampilan halaman web.</p>
+                    <div class="tab-title">
+                        <p class="tab-link-css active-link" onclick="opentabcss('fungsi-css')">Fungsi</p>
+                        <p class="tab-link-css" onclick="opentabcss('carakerja-css')">Cara Kerja</p>
+                        <p class="tab-link-css" onclick="opentabcss('aturan-css')">Aturan Dasar</p>
+    
+                    </div>
+                    <div class="tab-content-css active-tab" id="fungsi-css">
+                        <ul>
+                            <li><span>Pemisahan Tata Letak dan Presentasi</span><br>Salah satu fungsi utama CSS adalah memisahkan tata letak (HTML) dari presentasi (CSS). Ini memungkinkan pengembang untuk mengatur struktur dan konten HTML tanpa harus merubah gaya visual.</li>
+                            <li><span>Pengaturan Gaya dan Penyajian Visual</span><br>CSS memberikan kontrol terhadap elemen-elemen HTML, termasuk warna, ukuran teks, jenis font, margin, padding, dan tata letak lainnya. </li>
+                            <li><span>Responsivitas dan Adaptasi Layar</span><br>Dengan menggunakan media queries, CSS memungkinkan pengembang untuk membuat desain responsif yang dapat menyesuaikan tampilan halaman web dengan berbagai ukuran layar, seperti pada perangkat mobile, tablet, dan desktop. </li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-content-css" id="carakerja-css">
+                        <ul>
+                            <li><span>Penulisan Dokumen HTML</span><br>Setiap halaman web dimulai dengan deklarasi dokumen HTML, yang dituliskan sebagai !DOCTYPE html. Ini memberitahu browser bahwa dokumen ini adalah dokumen HTML5.</li>
+                            <li><span>Elemen HTML</span><br>HTML menggunakan elemen-elemen untuk mendefinisikan struktur dan konten halaman web. Elemen dimulai dan diakhiri dengan tag. Contohnya, p untuk paragraf, h1 untuk heading level 1, a untuk tautan, dll</li>
+                            <li><span>Struktur Dasar HTML</span><br>Sebuah dokumen HTML biasanya memiliki struktur dasar, termasuk elemen-elemen seperti html, head, dan body</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-content-css" id="aturan-css">
+                        <ul>
+                            <li><span>Deklarasi Dokumen HTML</span><br>Setiap dokumen HTML dimulai dengan deklarasi untuk menentukan versi HTML yang digunakan.</li>
+                            <li><span>Elemen HTML</span><br>HTML menggunakan elemen untuk menentukan struktur dan konten dokumen. Setiap elemen dimulai dengan tag pembuka dan diakhiri dengan tag penutup (kecuali untuk elemen yang bersifat mandiri).</li>
+                            <li><span>Struktur Dasar HTML</span><br>Dokumen HTML memiliki struktur dasar dengan elemen html, head, dan body. Tag html membungkus seluruh dokumen, head berisi informasi terkait dokumen seperti judul, dan body berisi konten utama.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="css-col-2">
+                <img src="images/lhtml.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- #javascript -->
+<div id="js">
+    <div class="container">
+        <div class="row">
+            <div class="html-col-1">
+                <img src="images/lhtml.png" alt="">
+            </div>
+            <div class="html-col-2">
+                <h1 class="sub-title">Mengenal JavaScript</h1>
+                <p>HTML adalah singkatan dari <i>HyperText Markup Language</i>. Ini merupakan bahasa markup standar untuk pembuatan halaman web. HTML memungkinkan pembuatan dan struktur bagian, paragraf, dan tautan menggunakan elemen HTML (blok bangunan dari halaman web) seperti tag dan atribut.</p>
+                <div class="tab-title">
+                    <p class="tab-link-js active-link" onclick="opentabjs('fungsi-js')">Fungsi</p>
+                    <p class="tab-link-js" onclick="opentabjs('carakerja-js')">Cara Kerja</p>
+                    <p class="tab-link-js" onclick="opentabjs('aturan-js')">Aturan Dasar</p>
+
+                </div>
+                <div class="tab-content-js active-tab" id="fungsi-js">
+                    <ul>
+                        <li><span>Struktur Konten Web</span><br>HTML berfungsi sebagai bahasa markup yang digunakan untuk membentuk struktur konten di web, termasuk teks, gambar, tautan, dan media lainnya.</li>
+                        <li><span>Interaktivitas dan Navigasi</span><br>HTML memungkinkan pembuatan tautan (hyperlink) untuk navigasi antar halaman, serta formulir untuk pengguna berinteraksi dengan menyampaikan data.</li>
+                        <li><span>Semantik dan Aksesibilitas</span><br>HTML mendukung markup semantik dengan elemen-elemen seperti tag header, nav, article, yang meningkatkan aksesibilitas dan memastikan pemahaman konten oleh mesin pencari.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content-js" id="carakerja-js">
+                    <ul>
+                        <li><span>Penulisan Dokumen HTML</span><br>Setiap halaman web dimulai dengan deklarasi dokumen HTML, yang dituliskan sebagai !DOCTYPE html. Ini memberitahu browser bahwa dokumen ini adalah dokumen HTML5.</li>
+                        <li><span>Elemen HTML</span><br>HTML menggunakan elemen-elemen untuk mendefinisikan struktur dan konten halaman web. Elemen dimulai dan diakhiri dengan tag. Contohnya, p untuk paragraf, h1 untuk heading level 1, a untuk tautan, dll</li>
+                        <li><span>Struktur Dasar HTML</span><br>Sebuah dokumen HTML biasanya memiliki struktur dasar, termasuk elemen-elemen seperti html, head, dan body</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content-js" id="aturan-js">
+                    <ul>
+                        <li><span>Deklarasi Dokumen HTML</span><br>Setiap dokumen HTML dimulai dengan deklarasi untuk menentukan versi HTML yang digunakan.</li>
+                        <li><span>Elemen HTML</span><br>HTML menggunakan elemen untuk menentukan struktur dan konten dokumen. Setiap elemen dimulai dengan tag pembuka dan diakhiri dengan tag penutup (kecuali untuk elemen yang bersifat mandiri).</li>
+                        <li><span>Struktur Dasar HTML</span><br>Dokumen HTML memiliki struktur dasar dengan elemen html, head, dan body. Tag html membungkus seluruh dokumen, head berisi informasi terkait dokumen seperti judul, dan body berisi konten utama.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- sejarah  -->
+<div id="sejarah">
+    <div class="container">
+        <h1 class="sub-title"> Sejarah </h1>
+        <div class="list-sejarah">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>Sejarah HTML</h2>
+                <p>HTML diciptakan oleh Sir Tim Berners-lee pada akhir tahun 1991 namun tidak dirilis secara resmi. Sir Tim Berners-lee merilis HTML versi pertama pada tahun 1993 dengan tujuan untuk berbagi informasi yang dapat dibaca dan diakses melalui web browser.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>Sejarah CSS</h2>
+                <p>CSS pertama kali diusulkan oleh Håkon Wium Lie pada 10 Oktober 1994, pada saat itu, Lie sedang bekerja dengan Tim Berners-Lee di CERN. beberapa bahasa style sheet lain untuk web diusulkan pada waktu yang hampir bersamaan, dan pada World Wide Web Consortium menghasilkan Rekomendasi W3C CSS (CSS1) pertama yang dirilis pada tahun 1996.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+
+                <i class="fa-brands fa-js"></i>
+                <h2>Sejarah JavaScript</h2>
+                <p>Pada awalnya, JavaScript dikembangkan pada tahun 1995 oleh seorang programmer bernama Brendan Eich. Pada saat itu, Eich bekerja untuk perusahaan Netscape Communications dan diberi tugas untuk membuat bahasa pemrograman yang dapat berjalan di browser Netscape Navigator.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- futures-->
+<div id="future">
+    <div class="container">
+        <h1 class="sub-title">Masa Depan</h1>
+        <div class="future-list">
+            <div class="future1">
+                <img src="images/html-future.png">
+                <div class="layer">
+                    <h3>HTML</h3>
+                    <p>
+                        Trajektori pengembangan HTML di masa depan kemungkinan akan memprioritaskan aksesibilitas, keamanan, dan responsivitas, memastikan relevansinya yang terus berlanjut dalam membentuk dasar pengembangan web di tengah lanskap digital yang terus berubah.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>      
+                </div>
+            </div>
+            <div class="future1">
+                <img src="images/css-future.png">
+                <div class="layer">
+                    <h3>CSS</h3>
+                    <p>
+                        Trajektori pengembangan HTML di masa depan kemungkinan akan memprioritaskan aksesibilitas, keamanan, dan responsivitas, memastikan relevansinya yang terus berlanjut dalam membentuk dasar pengembangan web di tengah lanskap digital yang terus berubah.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>      
+                </div>
+            </div>
+            <div class="future1">
+                <img src="images/js-future.png">
+                <div class="layer">
+                    <h3>JavaScript</h3>
+                    <p>
+                        Trajektori pengembangan HTML di masa depan kemungkinan akan memprioritaskan aksesibilitas, keamanan, dan responsivitas, memastikan relevansinya yang terus berlanjut dalam membentuk dasar pengembangan web di tengah lanskap digital yang terus berubah.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>      
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+    
+</div>
+
+<!--tentang saya-->
+
+<div id="tentang">
+    <div class="container">
+        <div class="row">
+            <div class="tentang-kiri">
+                <h1 class="sub-title">
+                    Tentang Saya
+                </h1>
+                <div class="info-container">
+                    <div class="icon-column">
+                        <i class="fa-solid fa-person fa-icon"></i>
+                        <i class="fa-regular fa-address-card fa-icon"></i>
+                        <i class="fa-solid fa-phone fa-icon"></i>
+                    </div>
+                    <div class="text-column">
+                        <p>Hendra Hadisaputro</p>
+                        <p>230101020026</p>
+                        <p>0857 7375 2545</p>
+                    </div>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="https://wa.me/6285773752545"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="tentang-kanan">
+                <form class="submit-to-google-sheet">
+                    <input type="text" name="nama" placeholder="Nama" required>
+                    <input type="email" name="email" placeholder="Alamat Email" required>
+                    <textarea name="message" rows="6" placeholder="Isi Pesan"></textarea>
+                    <button type="submit" class="btn btn2">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyrighted by hendrah2s. Untuk Tugas UAS Pemograman Web UNSIA</p>
+
+    </div>
+</div>
+
+
+<script>
+    var tablink = document.getElementsByClassName("tab-link");
+    var tabcontent = document.getElementsByClassName("tab-content");
+    var tablinkcss = document.getElementsByClassName("tab-link-css");
+    var tabcontentcss = document.getElementsByClassName("tab-content-css");
+    var tablinkjs = document.getElementsByClassName("tab-link-js");
+    var tabcontentjs = document.getElementsByClassName("tab-content-js");
+    
+
+    function opentab(tabname){
+        for(tablin of tablink){
+            tablin.classList.remove("active-link");
+        }
+
+        for(tabconten of tabcontent){
+            tabconten.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    
+
+
+    
+    
+    function opentabcss(tabnamecss){
+        for(tablincss of tablinkcss){
+            tablincss.classList.remove("active-link");
+        }
+
+        for(tabcontencss of tabcontentcss){
+            tabcontencss.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabnamecss).classList.add("active-tab");
+    }
+
+    function opentabjs(tabnamejs){
+        for(tablinjs of tablinkjs){
+            tablinjs.classList.remove("active-link");
+        }
+
+        for(tabcontenjs of tabcontentjs){
+            tabcontenjs.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabnamejs).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-170px"
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxEN_Y9FVRdDxOTZ3MvbOuLkk-UUAPxydvFs062DvfbiqVqVZqqT7-m3KSwpn5Rb3d6/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
